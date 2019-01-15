@@ -37,4 +37,8 @@ public class LRUConstantTime {
         // TODO: implement this method
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }

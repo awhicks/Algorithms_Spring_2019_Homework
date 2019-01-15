@@ -47,4 +47,8 @@ public class LRULinkedList {
         // TODO: implement this method
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
