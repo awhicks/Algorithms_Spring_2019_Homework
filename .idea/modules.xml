@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithms_Spring_2019_Homework.iml" filepath="$PROJECT_DIR$/Algorithms_Spring_2019_Homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FriendCircles/FriendCircles.iml" filepath="$PROJECT_DIR$/FriendCircles/FriendCircles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LRU/LRU.iml" filepath="$PROJECT_DIR$/LRU/LRU.iml" />
+    </modules>
+  </component>
+</project>

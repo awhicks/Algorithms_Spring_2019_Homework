@@ -1,0 +1,20 @@
+In this excerise you will implement a LRU (Least recently used) doublely linked list. In an LRU list the nodes are
+ordered by the time in which they were recently accessed. (From Least Recently Used to Most recently used)
+
+
+             --------------       --------------
+            |   key        |     |   key        |
+            |   Item       |     |   Item       |
+    null<-- |   Previous   |<--- |   Previous   |
+            |   Next       |---->|   Next       |--->null
+             --------------       --------------
+                    ^
+                    |
+                    |
+              Least Recently
+                 Accessed
+
+Your doublely linked List will have fixed capacity (n). If an element is added to the full linked list it will replace
+the tail of the link list (The least recently used item).  When an element is accessed it moved to the head of the list.
+
+Implement the double linked list by completig the associated skeleton code.
