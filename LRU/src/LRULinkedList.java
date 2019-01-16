@@ -30,11 +30,11 @@ public class LRULinkedList {
     }
 
     /**
-     * Get the value of the current node.
+     * Get the node that corresponds to the passed in key.
      * @param key
-     * @return value at key
+     * @return node that matches key
      */
-    public Node getValue(int key){
+    public Node getNode(int key){
         // TODO: implement this method
         return head;
     }
