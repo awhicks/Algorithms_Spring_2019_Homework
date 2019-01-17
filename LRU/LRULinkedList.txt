@@ -14,7 +14,6 @@ ordered by the time in which they were recently accessed. (From Least Recently U
               Least Recently
                  Accessed
 
-Your doublely linked List will have fixed capacity (n). If an element is added to the full linked list it will replace
-the tail of the link list (The least recently used item).  When an element is accessed it moved to the head of the list.
+Your doubly linked list will have fixed capacity (n). Any new nodes should be added to the head of the list and if the list is at capacity, the tail node (the one least recently used) should be removed.  When an element is accessed it moved to the head of the list.
 
 Implement the double linked list by completig the associated skeleton code.
