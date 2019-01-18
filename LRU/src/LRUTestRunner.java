@@ -70,8 +70,6 @@ public class LRUTestRunner {
         }
     }
 
-    // ----- The Following Should be Hidden ----- //
-
     @Test(timeout = 1000)
     public void testSimpleLRULarger() {
         LRULinkedList lruLinkedList2 = new LRULinkedList(3);
