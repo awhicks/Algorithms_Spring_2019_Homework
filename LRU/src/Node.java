@@ -17,4 +17,12 @@ public class Node{
         this.key = key;
     }
 
+    /**
+     * toString method to assist in debugging
+     */
+    public String toString() {
+        return "key = " + key + ", val = " + value;
+
+    }
+
 }
