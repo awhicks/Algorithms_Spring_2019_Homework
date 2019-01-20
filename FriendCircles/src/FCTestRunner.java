@@ -145,7 +145,7 @@ public class FCTestRunner {
         }
     }
 
-    @Test(timeout = 20000) // NOTE TEMPORARY TIME LIMIT... MIGHT BE TO SHORT
+    @Test(timeout = 20000)
     public void testFindCircleNumRuntime() {
         for (int n = 4000; n <= 4000; n++) {
             for (int c = 1; c <= n; c+= 3300) {
