@@ -1,0 +1,11 @@
+Please imagine a world with me.
+
+The algorithms TAs have uncovered some information that could save the world! The only trouble is, none of us are
+social media giants (I know, extremely unrealistic). In this imaginary, ludicrous world, everyone is on twitter and retweets
+everything they see on twitter. In this world twitter only shows you tweets from people you follow, no ads.
+
+We have broken down our information into k tweets. We need to find k people such that if they each tweet part of the message
+everyone entire world will see and retweet that message.
+
+To make your job easier, we have represented people as integers. Complete associated methods to help us figure out who
+to contact and how to save the world. Feel free to write other methods as you need them.
