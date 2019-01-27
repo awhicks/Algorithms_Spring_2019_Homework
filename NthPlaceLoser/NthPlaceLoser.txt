@@ -1,0 +1,15 @@
+The game of life is often won by the Nth place losers. Since the top P often burnout
+and the bottom M never finish. You are tasked with writing algorithm that finds N place user in linear time on average
+Given an Array of student objects that implement the compariable interface.
+[ -..........-,..........-]
+  ^          ^           ^
+  |          |           |
+Last        Nth       First place
+Place      Place
+Example [10, 9, 8 , 7,  6, 5, 4, 3, 2, 1]
+          ^  ^
+          1  2
+N = 2
+Returns 9
+N = 4
+Returns 7
