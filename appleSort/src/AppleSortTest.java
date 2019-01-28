@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class TestRunner {
+public class AppleSortTest {
 
     @Test(timeout = 1000)
     public void testBaskets() {
