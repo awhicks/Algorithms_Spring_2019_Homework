@@ -74,6 +74,94 @@ public class AppleSortTest {
 
 
 
+    @Test(timeout = 2000)
+    public void testScale(){
+        /**
+         * 2x million apples.
+         */
+        Random rnd = ThreadLocalRandom.current();
+        int maxBasket = 20;
+        int maxApples = 100000;
+        ArrayList<Apple[]> allThemApples = new ArrayList<>();
+        for(int i = 0; i < maxBasket; i++){
+            int randomNumberOfApples = ((ThreadLocalRandom) rnd).nextInt(maxApples);
+            Apple[] basket = new Apple[randomNumberOfApples];
+            int previousApple = 0;
+            for(int j =0; j < randomNumberOfApples; j++){
+                int next = Math.min(previousApple + ((ThreadLocalRandom) rnd).nextInt(2),10);
+                basket[j] = new Apple(j%2 , next);
+                previousApple = next;
+            }
+            allThemApples.add(basket);
+        }
+        Comparable[] apples = AppleSort.sort(allThemApples);
+        assert(isSorted(apples));
 
+    }
+
+    /**
+     * Demonstrate that merge sort will not work.
+     */
+
+    public void sortAmillion(){
+        int M = 2000000;
+        Comparable[] numbers = new Comparable[M];
+        for(int i =0; i < M; i++){
+            numbers[i] = new Apple(i%2, (int)(Math.random()*M));
+        }
+        Arrays.sort(numbers);
+    }
+
+    /**
+     *
+     * @return
+     */
+    @Test(timeout = 1000)
+    public void testStability(){
+        Random rnd = ThreadLocalRandom.current();
+        int maxBasket = 20;
+        int maxApples = 100; //Needs to end on a even because of the stability test.
+        ArrayList<Apple[]> allThemApples = new ArrayList<>();
+        for(int i = 0; i < maxBasket; i++){
+            Apple[] basket = new Apple[maxApples];
+            for(int j =0; j < maxApples; j++){
+                basket[j] = new Apple(j%2 , 10);
+            }
+            allThemApples.add(basket);
+        }
+        Comparable[] apples = AppleSort.sort(allThemApples);
+        assert(isStable(apples));
+    }
+
+    private boolean isStable(Comparable[] apples) {
+        int numApples = apples.length;
+        int previousType = -1;
+        for (int i = 0; i < numApples; i++) {
+            Apple a = (Apple) apples[i];
+            if ( a.type == previousType ) {
+                return false;
+            } else {
+                previousType = a.type;
+            }
+        }
+        return true;
+    }
+
+
+    public boolean isSorted(Comparable[] apples) {
+        int numApples = apples.length;
+        int previousType = -1;
+        int previousNumber = -1;
+        for (int i = 0; i < numApples; i++) {
+            Apple a = (Apple) apples[i];
+            if (!(a.deliciousness >= previousNumber)) {
+                return false;
+            } else {
+                previousNumber = a.deliciousness;
+            }
+        }
+        return true;
+    }
 }
+
 
