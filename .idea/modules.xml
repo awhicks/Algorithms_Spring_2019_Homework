@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Algorithms_Spring_2019_Homework.iml" filepath="$PROJECT_DIR$/Algorithms_Spring_2019_Homework.iml" />
       <module fileurl="file://$PROJECT_DIR$/BirdScooters/BirdScooters.iml" filepath="$PROJECT_DIR$/BirdScooters/BirdScooters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DDRRobot/DDRRobot.iml" filepath="$PROJECT_DIR$/DDRRobot/DDRRobot.iml" />
       <module fileurl="file://$PROJECT_DIR$/FriendCircles/FriendCircles.iml" filepath="$PROJECT_DIR$/FriendCircles/FriendCircles.iml" />
       <module fileurl="file://$PROJECT_DIR$/LRU/LRU.iml" filepath="$PROJECT_DIR$/LRU/LRU.iml" />
       <module fileurl="file://$PROJECT_DIR$/NthPlaceLoser/NthPlaceLoser.iml" filepath="$PROJECT_DIR$/NthPlaceLoser/NthPlaceLoser.iml" />
