@@ -49,18 +49,7 @@ public class CryptarithmsTest {
         input.add("SEND");
         input.add("MORE");
         input.add("MONEY");
-        Map<Character, Integer> expected = new HashMap<>();
-        expected.put('E', 5);
-        expected.put('S', 9);
-        expected.put('N', 6);
-        expected.put('D', 7);
-        expected.put('M', 1);
-        expected.put('O', 0);
-        expected.put('R', 8);
-        expected.put('Y', 2);
-
         assertTrue(isSolValid(input, Cryptarithms.solve(input)));
-
     }
 
     @Test(timeout=200)
@@ -70,17 +59,6 @@ public class CryptarithmsTest {
         input.add("SATURN");
         input.add("URANUS");
         input.add("MERCURY");
-        Map<Character, Integer> expected = new HashMap<>();
-        expected.put('A', 9);
-        expected.put('C', 6);
-        expected.put('E', 2);
-        expected.put('M', 1);
-        expected.put('N', 0);
-        expected.put('R', 3);
-        expected.put('S', 4);
-        expected.put('T', 5);
-        expected.put('U', 7);
-        expected.put('Y', 8);
 
         assertTrue(isSolValid(input, Cryptarithms.solve(input)));
 
@@ -92,17 +70,6 @@ public class CryptarithmsTest {
         input.add("SATURN");
         input.add("URANUS");
         input.add("JUPITER");
-        Map<Character, Integer> expected = new HashMap<>();
-        expected.put('A', 4);
-        expected.put('E', 2);
-        expected.put('I', 8);
-        expected.put('J', 1);
-        expected.put('N', 7);
-        expected.put('P', 0);
-        expected.put('R', 6);
-        expected.put('S', 9);
-        expected.put('T', 3);
-        expected.put('U', 5);
 
         assertTrue(isSolValid(input, Cryptarithms.solve(input)));
 
@@ -115,16 +82,6 @@ public class CryptarithmsTest {
         input.add("EARTH");
         input.add("URANUS");
         input.add("SATURN");
-        Map<Character, Integer> expected = new HashMap<>();
-        expected.put('A', 2);
-        expected.put('E', 7);
-        expected.put('H', 4);
-        expected.put('N', 0);
-        expected.put('R', 5);
-        expected.put('S', 8);
-        expected.put('T', 1);
-        expected.put('U', 6);
-        expected.put('V', 9);
 
         assertTrue(isSolValid(input, Cryptarithms.solve(input)));
 
@@ -136,18 +93,8 @@ public class CryptarithmsTest {
         input.add("EARTH");
         input.add("URANUS");
         input.add("SATURN");
-        Map<Character, Integer> expected = new HashMap<>();
-        expected.put('A', 4);
-        expected.put('E', 9);
-        expected.put('H', 3);
-        expected.put('N', 0);
-        expected.put('R', 5);
-        expected.put('S', 7);
-        expected.put('T', 8);
-        expected.put('U', 6);
 
         assertTrue(isSolValid(input, Cryptarithms.solve(input)));
-
     }
 
     @Test(timeout=2000)
@@ -157,9 +104,7 @@ public class CryptarithmsTest {
         input.add("MARS");
         input.add("SATURN");
         input.add("URANUS");
-
         assertEquals(null, Cryptarithms.solve(input));
-
     }
 
     public static Set<Character> getAlphabet() {
@@ -178,6 +123,7 @@ public class CryptarithmsTest {
         s.remove(t);
         return t;
     }
+
 
     /**
      * Outputted problem is guaranteed to have a solution
@@ -204,6 +150,7 @@ public class CryptarithmsTest {
 
         return encodeNumberStrings(numberStrings);
     }
+
 
     public static List<String> encodeNumberStrings(List<String> numberStrings) {
         Set<Integer> uniqueDigits = new HashSet<>();
